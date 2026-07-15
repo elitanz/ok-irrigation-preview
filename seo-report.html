@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>OK Irrigation — Website Cleanup List</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{--green:#12352a;--gold:#c9a45c;--ink:#1c2621;--muted:#5c6862;--cream:#f6f4ee;--line:#e4e0d6;
+        --red:#b4472e;--amber:#c98a2b;--ok:#2f7d54}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"Inter",system-ui,sans-serif;background:#eceae2;color:var(--ink);line-height:1.6;padding:40px 16px}
+  .sheet{width:min(820px,100%);margin:0 auto;background:#fff;border-radius:18px;overflow:hidden;
+         box-shadow:0 30px 70px -40px rgba(15,40,28,.5);border:1px solid var(--line)}
+  .top{background:var(--green);color:#fff;padding:34px 40px}
+  .top .kick{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);font-weight:600}
+  .top h1{font-family:"Fraunces",serif;font-weight:600;font-size:1.9rem;margin:8px 0 6px;letter-spacing:-.01em}
+  .top p{opacity:.8;font-size:.95rem}
+  .top .site{color:var(--gold);font-weight:600}
+  .body{padding:34px 40px 40px}
+  .lead{color:var(--muted);font-size:1rem;margin-bottom:28px;border-left:3px solid var(--gold);padding-left:16px}
+  .item{display:flex;gap:16px;padding:18px 0;border-top:1px solid var(--line)}
+  .item:first-of-type{border-top:0}
+  .pri{flex:0 0 auto;width:74px}
+  .tag{display:inline-block;font-size:.66rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+       padding:4px 9px;border-radius:6px;color:#fff}
+  .high{background:var(--red)}.med{background:var(--amber)}.low{background:var(--ok)}
+  .txt h3{font-family:"Fraunces",serif;font-size:1.16rem;color:var(--green);margin-bottom:5px;font-weight:600}
+  .txt p{color:var(--muted);font-size:.94rem}
+  .txt .found{font-size:.82rem;color:var(--ink);background:var(--cream);border:1px solid var(--line);
+              border-radius:7px;padding:6px 10px;margin-top:8px;display:inline-block;font-family:ui-monospace,Menlo,monospace}
+  .foot{background:var(--cream);border-top:1px solid var(--line);padding:24px 40px;display:flex;
+        justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
+  .foot .who{font-family:"Fraunces",serif;font-weight:600;color:var(--green)}
+  .foot .who span{display:block;font-family:"Inter";font-weight:400;font-size:.82rem;color:var(--muted)}
+  .badge{background:var(--green);color:#fff;font-size:.8rem;font-weight:600;padding:9px 16px;border-radius:100px}
+  @media(max-width:560px){.body,.top,.foot{padding-left:24px;padding-right:24px}.pri{width:64px}}
+</style>
+</head>
+<body>
+  <div class="sheet">
+    <div class="top">
+      <div class="kick">Quick Website Audit</div>
+      <h1>OK Irrigation — 6 things holding the site back on Google</h1>
+      <p>Prepared for <span class="site">okirrigation.com</span> · checked live on the current site</p>
+    </div>
+    <div class="body">
+      <p class="lead">Good news first: the site loads, the phone number is right, and the reviews are strong. These are the fixable gaps stopping it from showing up when people search for a sprinkler company nearby — roughly in priority order.</p>
+
+      <div class="item">
+        <div class="pri"><span class="tag high">High</span></div>
+        <div class="txt">
+          <h3>1 · No meta description</h3>
+          <p>This is the grey text that shows under your name in Google results. Right now Google is guessing it. A written one is your free ad copy on the results page — it's what makes someone click you instead of the next company.</p>
+          <span class="found">Found: no &lt;meta name="description"&gt; tag on the homepage</span>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="pri"><span class="tag high">High</span></div>
+        <div class="txt">
+          <h3>2 · The page title is just "OK Irrigation"</h3>
+          <p>The title is the blue clickable headline in Google — and it's one of the biggest ranking signals. Bare company name wastes it. It should read something like <em>"Sprinkler Installation &amp; Repair in Minneapolis | OK Irrigation."</em> That single line tells Google what you do and where.</p>
+          <span class="found">Found: &lt;title&gt;OK Irrigation&lt;/title&gt; — no service, no city</span>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="pri"><span class="tag high">High</span></div>
+        <div class="txt">
+          <h3>3 · No location or service keywords in the words on the page</h3>
+          <p>People search "sprinkler install Minneapolis" or "irrigation repair Chanhassen." Those exact phrases barely appear on the site, so Google has little reason to match you to them. Naming your services and the towns you cover, in plain sentences, is what gets you found locally.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="pri"><span class="tag med">Medium</span></div>
+        <div class="txt">
+          <h3>4 · No business "schema" (structured data)</h3>
+          <p>This is hidden code that hands Google your name, phone, hours, service area, and star rating in a format it trusts — and can unlock the star ratings that show right in search results. The current site has none.</p>
+          <span class="found">Found: no LocalBusiness JSON-LD on the page</span>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="pri"><span class="tag med">Medium</span></div>
+        <div class="txt">
+          <h3>5 · The headline says "Welcome to OK Irrigation"</h3>
+          <p>Your main headline is prime real estate for both Google and visitors. "Welcome" says nothing. Something like <em>"Sprinkler Installation &amp; Repair Across the Twin Cities"</em> works harder on both fronts.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="pri"><span class="tag low">Quick</span></div>
+        <div class="txt">
+          <h3>6 · That strong 5.0 rating isn't shown on the site</h3>
+          <p>You're rated 5.0 on Angi — that's real trust and it's currently invisible on your own homepage. Putting it front and center (and linking to the reviews) lifts calls from people already on the fence.</p>
+        </div>
+      </div>
+    </div>
+    <div class="foot">
+      <div class="who">Eli · web &amp; local SEO<span>Minneapolis · no charge for this list</span></div>
+      <div class="badge">All 6 fixed in the mockup →</div>
+    </div>
+  </div>
+</body>
+</html>
